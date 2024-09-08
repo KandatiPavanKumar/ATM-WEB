@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Interface</title>
+    <!-- Linking the CSS file -->
+    <link rel="stylesheet" href="atm1.css">
+</head>
+<body>
+    <div class="atm">
+        <h1>ATM Interface</h1>
+        <div class="screen">
+            <div id="message">Welcome! Please enter your PIN.</div>
+            <input type="password" id="pin" placeholder="Enter PIN" maxlength="4">
+            <button onclick="enterPin()">Enter</button>
+        </div>
+        <div class="buttons" id="actions" style="display: none;">
+            <button onclick="checkBalance()">Check Balance</button>
+            <button onclick="withdraw()">Withdraw</button>
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+
+    <!-- Linking the JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>
